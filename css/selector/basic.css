@@ -1,0 +1,31 @@
+/* CSS 우선 순위는 위 -> 아래로 갈수록 높은 우선 순위를 가짐 */
+/* ※ 아이디 선택자는 아이디 선택자 자체가 높은 우선 순위를 가짐 */
+
+/* 1. 모든 요소 선택자 : *   */
+* {
+  font-weight: bold;
+  color: darkorange;
+}
+
+/* 2. 태그 선택자 */
+p {
+  color: olivedrab;
+}
+
+/* 3. 클래스 선택자 */
+p.blue {
+  color: lightblue;
+}
+
+.blue.dark {
+  color: mediumblue;
+}
+
+.blue.dark {
+  color: darkblue;
+}
+
+/* 4. 아이디 선택자 */
+#red {
+  color: tomato;
+}
