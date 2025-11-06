@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./box1.css" />
+  </head>
+  <body>
+    <!-- 
+        ● 블록(block) 요소 : 하나의 행 전체 사용
+        - h1 ~ h6, p, div, table
+        - width : 100%로 시작해서 크기 지정 가능
+        - height : 내용만큼만 시작해서 크기 지정 가능
+        ● 인라인(inline) 요소 : 내용만큼만 사용
+        - width, height 지정 불가
+
+        ● margin
+        - 블록 요소는 상하좌우
+        - 인라인 요소는 좌우에만 여백
+        ● padding
+        - 인라인, 블록 요소가 섞이는 경우 패딩은 블록 요소에 상하 공간은 다른 요소를 밀어내지 않음
+        
+        ● margin 중복(병합)
+        - 형제 요소들의 margin-top과 margin-bottom이 만났을 때
+        - 부모 요소의 margin-top과 자식 요소의 margin-top이 만났을 때
+        - 부모 요소의 margin-bottom과 자식 요소의 margin-bottom이 만났을 때
+
+        ● 요소 크기 구성
+        - content + padding + border
+        ex) 200 + 20 + 4 = 224
+        - padding + border를 content 크기로 녹이는 방법 => box-sizing : border-box
+        ex) 200 => 176 + 20 + 4 
+    -->
+    <h1>블록 요소</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime natus
+      modi, id assumenda maiores suscipit molestiae doloribus pariatur
+      accusantium facilis nemo optio vitae iure dolores fuga soluta, quae enim
+      dolorem!
+    </p>
+    <table>
+      <tr>
+        <td>테이블1</td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td>테이블2</td>
+      </tr>
+    </table>
+    <span>인라인 요소</span>
+    <input type="text" name="" id="" />
+    <input type="checkbox" name="" id="" />
+    <label for="">사과</label>
+    <!-- placehold.co : 가상 이미지 공간 -->
+    <img src="https://placehold.co/100" alt="" />
+    <img src="https://placehold.co/200" alt="" />
+  </body>
+</html>

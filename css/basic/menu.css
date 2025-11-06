@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul > li {
+  display: inline-block;
+  margin-right: 2em;
+  border-bottom: 2px dashed darkorange;
+  border-width: 5px 10px;
+  border-style: dashed dotted;
+  border-color: darkmagenta darkcyan darkkhaki;
+}
+
+p {
+  margin: 8px;
+  display: inline-block;
+}
