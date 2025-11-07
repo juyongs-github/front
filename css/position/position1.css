@@ -1,0 +1,32 @@
+/* 
+    position : 요소들을 어떻게 배치할 지 정하는 요소
+    - 기본 배치 방식은 태그 작성 순서, 요소의 속성(block, lnline)
+    - static(기본값)
+    - fixed
+      1) 기준 : viewport
+      2) 위치 : 화면의 좌측 상단 기본값
+    - relative
+      1) 기준 : 원래 있던 위치
+      2) 위치 : 위치 지정 필요
+      3) 다른 요소에 영향 주지 않음
+    - absolute : 기준 -> viewport(지정하지 않는 경우), static이 아닌 부모 요소 지정하면 기준이 변경됨
+    - sticky : 기준 -> 스크롤 영역
+*/
+.lastest-news {
+  border: 2px solid #ccc;
+  width: 350px;
+  height: 145px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.read-more {
+  background-color: #000;
+  color: white;
+  line-height: 30px;
+  padding: 0 10px;
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 10px);
+}

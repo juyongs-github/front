@@ -1,0 +1,63 @@
+/* 
+    flex 레이아웃
+    1. 부모 요소에 적용하는 속성
+    ● display: flex
+    ● flex-direction : 자식을 어느 방향으로 정렬할 지 정함
+      1) row : items를 수평(좌 -> 우)로 표시
+      2) row-reverse : row의 반대 방향(우 -> 좌)으로 표시
+      3) column : items를 수직(위 -> 아래)으로 표시
+      4) column-reverse : column의 반대 방향(아래 -> 위)으로 표시
+    ● flex-wrap
+      1) no-wrap : 줄바꿈 안함 (기본값)
+      2) wrap : 오른쪽부터 아래줄로 줄바꿈
+      3) wrap-reverse : 왼쪽부터 아래줄로 줄바꿈
+    ● justify-content : 주 축의 정렬 방법
+      1) flex-start : 왼쪽 정렬 or 위쪽 정렬 (기본값)
+      2) flex-end : 오른쪽 정렬 or 아래쪽 정렬
+      3) center : 가운데 정렬
+      4) space-between : 시작과 마지막 요소를 양쪽 끝으로 밀고 남은 공백을 나눠갖기
+      5) space-around : 요소들 주위를 공백으로 채우기
+      6) space-evenly : 공백을 똑같이 나눠갖기
+    ● align-content : align-items와 동작 방식 동일
+      1) flex-wrap: wrap; 이고 두 줄 일때 사용
+      2) align-items랑 같이 쓰는 경우 align-content가 우선
+    ● align-items : 주 축의 반대(교차) 축의 정렬 방식
+      1) flex-direction: row; 이면 주 축(x축), 교차 축(y축)
+      2) flex-direction: column; 이면 주 축(y축), 교차 축(x축)
+      3) flex-start : 각 줄의 시작점으로 정렬
+      4) flex-end : 각 줄의 끝점으로 정렬
+      5) center : 가운데 정렬
+      6) baseline : 문자 기준선으로 정렬
+
+    2. 자식 요소에 적용하는 속성
+    ● order : item 순서 설정
+      1) order: 0; (기본값)
+      2) 숫자가 클수록 맨 끝으로 가게 됨
+      3) 앞 쪽에 배치하려면 -값 부여
+    ● flex-grow : items 증가 비율
+      1) flex-grow: 0; (기본값)
+      2) 부모 요소에 여백이 있는 경우 아이템 너비를 늘릴 수 있음
+    ● flex-shrink : items 감소 비율
+      1) 숫자가 클수록 더 많은 너비가 감소됨
+    ● flex-basis : items (공간 배분 전) 기본 너비 설정
+      1) auto (기본값) : item들의 width를 사용(or 컨텐츠 크기)
+    ● flex : flex-grow + flex-shrink + flex-basis
+      1) flex: 1; -> 1, 1, 0 (0: 크기 균등 계산)
+    ● align-self
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container div {
+  width: 33.3%;
+  height: 200px;
+  background-color: magenta;
+  /* display: inline-block; */
+}
