@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+}
+
+.container div {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+}
+
+.container div:first-child {
+  background-color: chartreuse;
+}
+
+.container div:nth-child(2) {
+  background-color: crimson;
+  display: none;
+}
+
+.container div:nth-child(3) {
+  background-color: cornflowerblue;
+  visibility: hidden;
+}
+
+.container div:last-child {
+  background-color: darkcyan;
+}

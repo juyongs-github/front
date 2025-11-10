@@ -1,0 +1,33 @@
+/* 
+    CSS 상속
+    1) 글자 관련 속성들이 주로 상속됨
+    - color
+    - font-*
+    - text-align
+    - text-decoration
+    - visibility
+
+    2) 우선 순위
+    1. 명시도 점수가 높은 선언이 우선
+       : !important > inline 선언(html에서 style 선언) > id 선택자(#) > class 선택자(.) > 태그 선택자 > 전체(*) > 상속
+    2. 똑같은 명시도 일 때, 나중에 작성한 것이 우선
+*/
+.ecosystem {
+  color: red;
+}
+
+.animal {
+  color: darkblue;
+}
+
+#text {
+  color: teal;
+}
+
+.area p {
+  color: blueviolet;
+}
+
+p {
+  color: aqua;
+}
